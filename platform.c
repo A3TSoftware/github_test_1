@@ -69,7 +69,7 @@
 	
 void PLATFORM_InitDelay(void)
 {
-	sDelayNopNumber = 100;
+	sDelayNopNumber = 99;
 //    if (SysTick_Config(RCC_GetHCLKFreq() / 1000))
 //    {
 //        while (1)

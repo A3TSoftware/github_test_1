@@ -106,9 +106,9 @@ current_state system_state = idle;
 
 u8 pwm_levels[] = {
   100,
-  69,
-  46,
-  17
+  68,
+  45,
+  16
 }; // Only three levels
 int pwm_index = 1;
 int pwm_index1 = 1;
@@ -138,7 +138,7 @@ if (input_switch_check == 0) {
 } else if (input_switch_check == 1) {
 
     // short press on release
-    if (input_switch_counter > 0 && input_switch_counter <= 350) {
+    if (input_switch_counter > 0 && input_switch_counter <= 340) {
 
         // ignore first false startup pulse
         if (first_pass_event_ignored == 0) {
@@ -148,7 +148,7 @@ if (input_switch_check == 0) {
         }
 				
     }
-		else if(input_switch_counter > 350) {
+		else if(input_switch_counter > 340) {
             input_switch_long_press = 1;
         }
 
@@ -159,7 +159,7 @@ if (input_switch_check == 0) {
 					pwm_button_was_pressed = 1;
 
     counter_pwm++;
-    if ((counter_pwm >= 500 && counter_pwm <=1000)  && lamp_state == true) {
+    if ((counter_pwm >= 400 && counter_pwm <=1000)  && lamp_state == true) {
 
       if (new_counter == 0 && led_on == 0) //for the pwm mode activation
 
