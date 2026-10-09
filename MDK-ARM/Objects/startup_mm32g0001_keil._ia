@@ -1,0 +1,5 @@
+--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I.\RTE\_TIM1_PWM_Output
+-IC:\Keil_v5\ARM\CMSIS\Include
+--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1"
+--list .\listings\startup_mm32g0001_keil.lst --xref -o .\objects\startup_mm32g0001_keil.o --depend .\objects\startup_mm32g0001_keil.d "..\..\..\..\..\Device\MM32G0001\Source\KEIL_StartAsm\startup_mm32g0001_keil.s"

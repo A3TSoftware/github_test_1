@@ -1,0 +1,5 @@
+-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\TIM1_PWM_Output -I ..\..\..\..\..\Device\CMSIS\Core\Include -I ..\..\..\..\..\Device\MM32G0001\HAL_Lib\inc -I ..\..\..\..\..\Device\MM32G0001\Include
+-I.\RTE\_TIM1_PWM_Output
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="530" -D_RTE_ -DUSE_STDPERIPH_DRIVER
+-o .\objects\hal_iwdg.o --omf_browse .\objects\hal_iwdg.crf --depend .\objects\hal_iwdg.d "..\..\..\..\..\Device\MM32G0001\HAL_Lib\src\hal_iwdg.c"
